@@ -15,7 +15,7 @@
 
 <style>
 .jumbotron {
-  background: url('../assets/topImg.jpg') center no-repeat;
+  background: url('~assets/topImg.jpg') center no-repeat;
   background-size: cover;
   background-color: rgba(167, 231, 255, 0.8);
   background-blend-mode: lighten;
