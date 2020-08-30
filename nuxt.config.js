@@ -39,7 +39,15 @@ export default {
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
    */
-  components: true,
+  components: {
+    dirs: [
+      '~/components',
+      {
+        path: '~/components/sections/',
+        prefix: 'Section',
+      },
+    ],
+  },
   /*
    ** Nuxt.js dev-modules
    */
@@ -50,7 +58,18 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    'nuxt-webfontloader',
   ],
+  webfontloader: {
+    google: {
+      families: [
+        'Noto Sans JP',
+        'Hiragino Kaku Gothic ProN',
+        'Proxima Nova',
+        '游ゴシック',
+      ],
+    },
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

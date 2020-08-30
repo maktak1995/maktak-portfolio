@@ -1,5 +1,7 @@
 <template>
-  <div :href="link" class="iconLink h2"><b-icon :icon="icon" /> {{ name }}</div>
+  <nuxt-link :to="link" class="icon-link h2"
+    ><b-icon :icon="icon" /> {{ name }}</nuxt-link
+  >
 </template>
 
 <script lang="ts">
@@ -13,11 +15,14 @@ export default {
 }
 </script>
 <style>
-.iconLink {
+.icon-link {
+  text-decoration: none;
+  color: #212529;
   cursor: pointer;
 }
 
-.iconLink:hover {
+.icon-link:hover {
   color: whitesmoke;
+  text-decoration: none;
 }
 </style>

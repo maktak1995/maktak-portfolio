@@ -6,6 +6,7 @@
 
 <style>
 html {
+  scroll-behavior: smooth;
   font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Proxima Nova',
     Verdana, '游ゴシック', YuGothic, Meiryo, sans-serif;
   font-size: 16px;
