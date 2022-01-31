@@ -1,4 +1,7 @@
 export default {
+  router: {
+    base: '/maktak-portfolio/',
+  },
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
