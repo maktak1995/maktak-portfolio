@@ -90,6 +90,10 @@ export default {
           'nesting-rules': true,
         },
       },
+      babel: {
+        babelrc: false,
+        compact: false,
+      },
     },
   },
 
