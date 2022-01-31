@@ -1,8 +1,5 @@
 <template>
-  <b-jumbotron
-    header="MakTak's Portfolio"
-    lead="This site is Portfolio of Takehiro Makita."
-  >
+  <b-jumbotron header="MTPF" lead="This site is Portfolio of Takehiro Makita.">
     <div class="menu">
       <IconLink link="#home" icon="house-fill" name="Home" />
       <IconLink link="#profile" icon="person-fill" name="Profile" />
