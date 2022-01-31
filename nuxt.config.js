@@ -1,12 +1,3 @@
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/maktak-portfolio/',
-        },
-      }
-    : {}
-
 export default {
   /*
    ** Nuxt rendering mode
@@ -90,12 +81,13 @@ export default {
           'nesting-rules': true,
         },
       },
-      babel: {
-        babelrc: false,
-        compact: false,
-      },
+    },
+    babel: {
+      compact: true,
     },
   },
 
-  ...routerBase,
+  router: {
+    base: '/maktak-portfolio/',
+  },
 }
