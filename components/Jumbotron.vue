@@ -1,9 +1,8 @@
 <template>
   <b-jumbotron
     header="MakTak's Portfolio"
-    lead="This site is a portfolio-page of Takehiro Makita."
+    lead="This site is Portfolio of Takehiro Makita."
   >
-    <p>このページは牧田岳大のポートフォリオサイトです。Nice to meet you !</p>
     <div class="menu">
       <IconLink link="#home" icon="house-fill" name="Home" />
       <IconLink link="#profile" icon="person-fill" name="Profile" />
@@ -32,5 +31,8 @@
   align-items: center;
   padding-top: 15%;
   width: 50%;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 }
 </style>

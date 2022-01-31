@@ -1,23 +1,24 @@
 <template>
   <SectionLayout icon="person-fill" title="Profile">
     <div class="profile-container">
-      <img class="me" src="../../assets/maktak.jpg" />
+      <div class="me" />
       <div class="profile-content">
-        <div class="h3">自己紹介</div>
         <p>
-          はじめまして。私は牧田岳大(<a href="https://github.com/maktak1995"
+          はじめまして。牧田岳大(<a href="https://github.com/maktak1995"
             >@maktak1995</a
           >)と申します。
         </p>
         <p>
-          大学で情報系の学科に進んだのをきっかけにプログラミングを始め、現在は株式会社VOYAGE
-          GROUPにてフロントエンド関係のお仕事をやっています。
+          大学で情報系の学科に進んだのをきっかけにプログラミングを始めました。
         </p>
         <p>
-          主に使う言語はTypeScriptで、Reduxフレームワークを利用したアプリケーションの開発などをしています。
+          現在は株式会社CARTAHOLDINGSにてWebサービスの開発業務を行っています。
+        </p>
+        <p>
+          業務としてWebサービスの開発をフロントエンド・バックエンド問わず広範に行っていますが、<br />得意分野はフロントエンドです。
         </p>
         <div class="tech-stacks">
-          <div class="h3">利用経験のある言語、FWなど</div>
+          <div class="h3">利用経験のある技術</div>
           <img class="tech-icon" src="../../assets/typeScript.png" />
           <img class="tech-icon" src="../../assets/react.png" />
           <img class="tech-icon" src="../../assets/redux.png" />
@@ -40,22 +41,33 @@
   width: 100%;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 }
 .profile-content {
   text-align: left;
   padding-left: 32px;
   display: block;
+  width: 80%;
+  @media screen and (max-width: 480px) {
+    padding-left: 0px;
+    padding-top: 32px;
+    width: 100%;
+  }
 }
 
 .tech-stacks {
   padding-top: 18px;
 }
+
 .me {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-position: center;
+  background: center no-repeat;
   background-size: cover;
+  background-image: url('../../assets/makitake.jpg');
 }
 
 .tech-icon {

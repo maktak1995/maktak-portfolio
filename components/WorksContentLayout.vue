@@ -1,23 +1,11 @@
 <template>
   <div class="works-container">
     <img class="works-screenshot" :src="image" />
-    <ul class="works-content">
-      <li>
-        <div class="works-li">
-          <div class="pr-2">URL:</div>
-          <a v-if="url" :href="url">{{ url }}</a>
-          <p v-else>非公開</p>
-        </div>
-      </li>
-      <li>
-        <div class="works-li">
-          <div class="pr-2">Source:</div>
-          <a v-if="source" :href="source">{{ source }}</a>
-          <p v-else>非公開</p>
-        </div>
-      </li>
+    <div class="works-content">
       <p class="works-explanation p-2"><slot>explanation</slot></p>
-    </ul>
+      <a v-if="url" :href="url">SITE</a>
+      <a v-if="source" :href="source">SOURCE</a>
+    </div>
   </div>
 </template>
 
@@ -45,22 +33,10 @@ export default {
   list-style-type: none;
   width: 100%;
 }
-.works-li {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border-bottom: 1px solid #66d7ff;
-  padding: 5px;
-  margin: 2px;
-
-  & p {
-    margin-bottom: 0px;
-  }
-}
 .works-explanation {
   line-height: 28px;
 }
 .works-screenshot {
-  width: 320px;
+  width: 100%;
 }
 </style>

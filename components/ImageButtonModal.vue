@@ -28,7 +28,7 @@ export default {
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: lighten;
-  width: 240px;
-  height: 240px;
+  width: 260px;
+  height: 260px;
 }
 </style>

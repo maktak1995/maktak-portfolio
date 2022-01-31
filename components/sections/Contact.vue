@@ -16,6 +16,9 @@
   display: flex;
   align-items: center;
   padding-bottom: 120px;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 }
 .email {
   background-color: #1e4270;
