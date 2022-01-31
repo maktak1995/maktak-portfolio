@@ -86,8 +86,4 @@ export default {
       compact: true,
     },
   },
-
-  router: {
-    base: '/maktak-portfolio/',
-  },
 }
