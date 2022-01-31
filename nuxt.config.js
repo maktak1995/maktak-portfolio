@@ -98,8 +98,4 @@ export default {
   },
 
   ...routerBase,
-
-  generate: {
-    dir: 'docs',
-  },
 }
